@@ -19,10 +19,10 @@ class App < Sinatra::Base
 
   get '/fe/:contributor' do |contributor|
     @user = contributor
-    @kudos = Kudos.new.contributions(contributor)
+    @kudos = Kudos.new.contributions(contributor) || []
     num_issues_created = @kudos.select{|contrib| contrib["ContributionType"] == "Issue"}.length
     num_prs_created = @kudos.select{|contrib| contrib["ContributionType"] == "PullRequest"}.length
-    @awards = Awards.all.select{:eligible?}
+    @awards = Awards.all.select{|a| a.eligible?(num_issues_created)}
     haml :kudos
   end
 end
