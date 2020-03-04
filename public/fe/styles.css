@@ -1,0 +1,137 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 90%;
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:15px;
+  }
+  .subheader {
+    font-family: proxima-nova, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #594a4e;
+    margin-top:-15px;
+  }
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    background-color: #faeee7;
+    display: block;
+  }
+
+  .contributions-section {
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    background-color: #fffffe;
+    display: block;
+  }
+
+  a {
+      color: #33272a;
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .awards {
+      overflow: auto;
+      white-space: nowrap;
+      width:100%;
+  }
+
+  .award {
+    display: inline-block;
+    height:250px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #fffffe;
+    text-align: center;
+    margin:5px;
+  }
+
+  body {
+    font-family: proxima-nova, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    color: #594a4e;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    -webkit-box-direction: reverse;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 {
+    font-family: proxima-nova, sans-serif;
+    -webkit-box-direction: reverse;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin: .67em 0;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #33272a;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+  #adventure-map{
+
+    -webkit-box-shadow: 0 10px 10px -10px black;
+  -moz-box-shadow: 0 10px 10px -10px black;
+  box-shadow: 0 10px 10px -10px black;
+  }
+  .inline-block-child {
+    display: inline-block;
+  }
+  .header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .logo {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #272343;
+  }
+  p {
+    color: #2d334a
+  }
+
+  .Issue {
+    list-style-type: "💬 ";
+  }
+
+  .PullRequest {
+    list-style-type: "💻 ";
+  }
+

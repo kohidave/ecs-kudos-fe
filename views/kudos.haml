@@ -1,0 +1,27 @@
+!!!
+%html
+    %title= @user
+    %link(rel="stylesheet" href="styles.css")
+    %body
+        .section
+            .container{:display => "#{@awards.length > 0 ? 'block': 'none'}"}
+                %h1 Kudos Awards 🙏
+                %p.subheader We're so greatful for your contributions. To thank you, we've created these spectacular awards.
+                .awards
+                    -@awards.each do |award|
+                        .award
+                            %h2=award.name
+                            %h1=award.image
+                            %i=award.description
+        .contributions-section
+            .container
+                %h1= "Contributions from #{@user} #{['✨', '😎', '🎉', '🎊'].sample}"
+                %p.subheader Here's all the cool contributions we've recorded for you.
+                %ul.kudos
+                    -@kudos.each do |kudo|
+                        %li{:class => "#{kudo["ContributionType"]}"}
+                            %a{:href => "#{kudo['ContributionURL']}"}
+                                = kudo["ContributionName"]
+                            = "at #{Time.parse(kudo["Time"]).localtime.strftime("%m/%d/%Y %I:%M %p")}"
+
+
