@@ -15,7 +15,7 @@
                             %i=award.description
         .contributions-section
             .container
-                %h1= "Contributions from #{@user} #{['✨', '😎', '🎉', '🎊'].sample}"
+                %h1= "Contributions from #{@user} #{'💩' if @user == 'kohidave' else ['✨', '😎', '🎉', '🎊'].sample}"
                 %p.subheader Here's all the cool contributions we've recorded for you.
                 %ul.kudos
                     -@kudos.each do |kudo|
